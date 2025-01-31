@@ -3,11 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
- "scripts": {
-  "build": "vite build",
-  "start": "node src/server/index.js",
-  "dev": "concurrently \"vite\" \"npm run bot\""
-}
+  "scripts": {
+    "dev": "npm install && concurrently \"vite\" \"npm run bot\"",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "bot": "node src/bot/index.js"
   },
   "dependencies": {
     "concurrently": "^8.2.2",
