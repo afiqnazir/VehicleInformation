@@ -211,7 +211,7 @@ function App() {
                       title="Compliance Status"
                       items={[
                         { label: "RC Status", value: vehicleData.rcStatus },
-                        { label: "RC Status As On", value: formatDate(vehicleData.rcStatusAsOn || '') },
+                        { label: "RC Status As On", value: formatDate(vehicleData.rcStatusAsOn) },
                         { label: "PUC Number", value: vehicleData.full_details?.pucNo || 'N/A' },
                         { label: "PUC Valid Till", value: formatDate(vehicleData.pucUpTo) },
                         { label: "Fitness Valid Till", value: formatDate(vehicleData.fitnessUpTo) },
