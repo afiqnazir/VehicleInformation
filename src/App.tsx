@@ -211,7 +211,7 @@ function App() {
                       title="Compliance Status"
                       items={[
                         { label: "RC Status", value: vehicleData.rcStatus },
-                        { label: "RC Status As On", value: formatDate(vehicleData.full_details?.rcStatusAsOn || '') },
+                        { label: "RC Status As On", value: formatDate(vehicleData.rcStatusAsOn || '') },
                         { label: "PUC Number", value: vehicleData.full_details?.pucNo || 'N/A' },
                         { label: "PUC Valid Till", value: formatDate(vehicleData.pucUpTo) },
                         { label: "Fitness Valid Till", value: formatDate(vehicleData.fitnessUpTo) },
@@ -240,7 +240,7 @@ function App() {
                       title="Address Details"
                       items={[
                         { label: "Present Address", value: vehicleData.full_details?.presentAddress || vehicleData.full_details?.presentAddressMasked || 'N/A' },
-                        { label: "Permanent Address", value: vehicleData.full_details?.permanentAddress || vehicleData.full_details?.permanentAddressMasked || 'N/A' },
+                        { label: "Permanent Address", value: vehicleData.presentAddressMasked || 'N/A' },
                         { label: "Pin Code", value: vehicleData.full_details?.pinCode || 'N/A' },
                         { label: "Mobile Number", value: vehicleData.full_details?.mobileNo || 'N/A' },
                       ]}
