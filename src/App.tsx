@@ -178,7 +178,7 @@ function App() {
                       items={[
                         { label: "Engine Number", value: vehicleData.engineNo || vehicleData.engineNo },
                         { label: "Chassis Number", value: vehicleData.chassisNoFull || vehicleData.chassisNo },
-                        { label: "Cubic Capacity", value: `${vehicleData.cubicCap} cc` },
+                        { label: "Cubic Capacity", value: `${vehicleData.full_details?.cubicCap} cc` },
                         { label: "No. of Cylinders", value: vehicleData.full_details?.noOfCylinder || 'N/A' },
                         { label: "Wheelbase", value: `${vehicleData.full_details?.wheelbase || 'N/A'} mm` },
                       ]}
