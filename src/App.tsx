@@ -176,9 +176,9 @@ function App() {
                     <InfoCard
                       title="Engine Information"
                       items={[
-                        { label: "Engine Number", value: vehicleData.full_details?.engineNo || vehicleData.engineNo },
+                        { label: "Engine Number", value: vehicleData.engineNo || vehicleData.engineNo },
                         { label: "Chassis Number", value: vehicleData.chassisNoFull || vehicleData.chassisNo },
-                        { label: "Cubic Capacity", value: `${vehicleData.full_details?.cubicCap || 'N/A'} cc` },
+                        { label: "Cubic Capacity", value: `${vehicleData.cubicCap || 'N/A'} cc` },
                         { label: "No. of Cylinders", value: vehicleData.full_details?.noOfCylinder || 'N/A' },
                         { label: "Wheelbase", value: `${vehicleData.full_details?.wheelbase || 'N/A'} mm` },
                       ]}
